@@ -2,8 +2,8 @@
 #include "pico/stdlib.h"
 #include <stdio.h>
 
-const int LED_PIN_R = 5;
-const int LED_PIN_Y = 28;
+const int LED_PIN_R = 6;
+const int LED_PIN_Y = 35;
 
 int main() {
   stdio_init_all();
