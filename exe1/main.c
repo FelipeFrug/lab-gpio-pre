@@ -14,12 +14,12 @@ int main() {
   gpio_set_dir(LED_PIN_Y, GPIO_OUT);
 
   while (true) {
-    gpio_put(LED_PIN_R, 1);
-    gpio_put(LED_PIN_Y, 1);
-    sleep_ms(250);
-
     gpio_put(LED_PIN_R, 0);
     gpio_put(LED_PIN_Y, 0);
+    sleep_ms(250);
+
+    gpio_put(LED_PIN_R, 1);
+    gpio_put(LED_PIN_Y, 1);
     sleep_ms(250);
   }
 }
